@@ -1,0 +1,36 @@
+body {
+  background: "img/picturetwo.jpg" alt="picture of Patricia's dog" style="width:600px;height:600px;">;
+}
+
+p {
+  color: yellow;
+}
+
+img {
+  opacity:0.1;
+}
+img:hover{
+  opacity: 1;
+}
+
+/* a {
+color:yellow;
+}*/
+.navlink{
+  color:green;
+}
+#navBar{
+  background-color; lightpink;
+  width: 50%
+  height: 50px;
+  margin: auto;
+  position: relative;
+}
+
+#logo{
+  position: absolute;
+  left: 50px
+  top: 50px
+  width:20%
+  height:100px;
+}

@@ -1,0 +1,150 @@
+
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 16.5rem;            /* Footer height */
+}
+
+/*.header {
+  position: absolute;
+  padding-left: 750px;
+  padding-right: 400px;
+  padding-top: 120px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-stretch: extra-expanded;
+  font-family: Anonymous Pro;
+
+}
+*/
+.navlink{
+  color:white;
+  margin: 2rem;
+}
+
+a {
+   text-decoration: none;
+}
+
+#navBar{
+  font-family: Anonymous Pro;
+  font-size: 16.5px;
+  width: 525px;
+  height:37px;
+  padding:10px;
+
+  padding-top: 30px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-width: 1px;
+  background-color: rgba(0,0,0,0.2);
+
+  margin: auto;
+  margin-top: 100px;
+  position: relative;
+}
+
+h3 {
+  font-family: Anonymous Pro;
+  font-size: 24px;
+  font-style: normal;
+  /*opacity: 0.7;*/
+  text-align: center;
+  color: white;
+  padding: 30px;
+  border: 1px solid #fff;
+  border-width: 1px;
+  background-color: rgba(0,0,0,0.2);
+
+  margin: auto;
+  margin-top: 250px;
+  margin-left: 250px;
+  margin-right: 250px;
+  position: relative;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-itunes {
+  /*background: #3B5998;*/
+  color: #FA57C1;
+  font-size: 70px;
+}
+
+/* Twitter */
+.fa-spotify {
+  /*background: #55ACEE;*/
+  color: #1ed760;
+  font-size: 70px;
+}
+
+.fa-facebook {
+  /*background: #1877f2;*/
+  color: #1877f2;
+  font-size: 70px;
+}
+
+.fa-twitter {
+  /*background: #1877f2;*/
+  color: #1da1f2;
+  font-size: 70px;
+}
+
+.fa-youtube {
+  /* background: #FF0000;*/
+  color: #ff0000;
+  font-size: 70px;
+}
+
+.fa-google {
+  /*background: #1877f2;*/
+  color: #ea4335;
+  font-size: 70px;
+}
+
+.fa-instagram {
+  /*background: #1877f2;*/
+  color: #c32aa3;
+  font-size: 70px;
+}
+
+.fa-soundcloud {
+  /*background: #55ACEE;*/
+  color: #ff5500;
+  font-size: 70px;
+}
+
+.audio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  opacity: 0.6;
+}
