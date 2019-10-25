@@ -1,0 +1,68 @@
+p {
+  color: yellow;
+}
+
+img {
+  opacity:0.1;
+}
+img:hover{
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  float: left;
+}
+
+/* a {
+color:yellow;
+}*/
+.navlink{
+  color:white;
+  margin: 2rem;
+}
+#navBar{
+  width: 550px;
+  height:37px;
+  padding:10px;
+
+  padding-top: 30px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-width: 1px;
+  background-color: rgba(0,0,0,0.2);
+
+  margin: auto;
+  margin-top: 100px;
+  position: relative;
+}
+
+#logo{
+  position: absolute;
+  left: 50px
+  top: 50px
+  width:20%
+  height:100px;
+}
+#social-media{
+  margin-top: 5rem;
+}
+
+#social-media i{
+  font-size: 5rem;
+  transition: color 650ms;
+}
+
+#fa-itunes:hover{
+  color: #fa57c1;
+}
+
+#fa-instagram-square:hover{
+  color: #8bdbf4;
+}
+#fa-camera-retro-square:hover{
+  color: #8bdbf4;
+}
