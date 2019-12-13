@@ -1,0 +1,11 @@
+/* Style the video: 100% width and height to cover the entire window */
+#musicvideo {
+  position: absolute;
+  z-index:0;
+  top: 0;
+  left: 0;
+  min-width: 75%;
+  min-height: 75%;
+  padding-left: 205px;
+  padding-top: 150px;
+}

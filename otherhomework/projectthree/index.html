@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+    <script>
+      function populate() {
+
+        // var myList = ["red", "orange", "green", "blue", "purple", "brown", "magenta", "tan", "cyan", "olive", "maroon", "navy",
+        // "aquamarine", "turquoise", "silver", "lime", "teal", "indigo", "violet", "pink", "black", "white", "grey", "gray"];
+         var myList = ["pink", "brown", "yellow", "teal", "purple", "grey", "green", "blue", "magenta", "tan", "navy", "red", "orange", "black", "maroon", "mint", "violet"];
+         var videos = ["https://www.youtube.com/embed/X2kPLQEFR6Y", "https://www.youtube.com/embed/bc4EbCi_010", "https://www.youtube.com/embed/xvOfeCHF2ck",
+         "https://www.youtube.com/embed/DSbqyWXVDYg", "https://www.youtube.com/embed/8dtELJ6610c", "https://www.youtube.com/embed/mwm7MXwTw9M", "https://www.youtube.com/embed/wKQNt8_UWmk",
+         "https://www.youtube.com/embed/8eydIBipTO8", "https://www.youtube.com/embed/RCX5UOodZtw", "https://www.youtube.com/embed/8GGGliIxpgc", "https://www.youtube.com/embed/7fPTgnCBO1Y",
+         "https://www.youtube.com/embed/CPmcar62Y5c", "https://www.youtube.com/embed/RWKAkRj8Vag", "https://www.youtube.com/embed/hLC9ZxtuLxI", "https://www.youtube.com/embed/MYESVkUxWxM",
+         "https://www.youtube.com/embed/9OBTg6FDLBQ", "https://www.youtube.com/embed/PT5mM6k9Akc"];
+
+            if (myList.includes(document.myform.userColor.value)) {
+
+              var index = myList.indexOf(document.myform.userColor.value);
+              var element = document.getElementById("musicvideo");
+              var video;
+              if(typeof(element) != 'undefined' && element != null) {
+                  document.getElementById("musicvideo").setAttribute("src", videos[index]);
+              } else {
+                  video = document.createElement("iframe");
+                  video.setAttribute("id", "musicvideo");
+                  video.setAttribute("width", "1120");
+                  video.setAttribute("height", "630");
+                  video.setAttribute("frameborder", "0");
+                  video.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
+                  video.setAttribute("src", videos[index]);
+                  // video.setAttribute("position", "absolute");
+                  document.body.appendChild(video);
+              }
+
+
+
+
+            }
+            else{
+                window.alert("sorry, try a different color!");
+            }
+      }
+    </script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+  </head>
+
+    <body>
+
+
+      <form name="myform" onsubmit="return populate(); " class="search">
+        input a color: <input type="text" name="userColor" value"${userColor}"><br>
+          <style>
+            .search {
+              display: inline-block;
+              position: relative;
+              width: 375px;
+              height: 55px;
+
+              border-radius: 27px;
+
+              color: #000;
+              font: 700 14px/60px "Droid Sans", sans-serif;
+              letter-spacing: 0.05em;
+              text-align: center;
+              text-decoration: none;
+              text-transform: uppercase;
+            }
+          </style>
+      </form>
+      <!-- <a href="style.css" class="button">click me for a surprise!</a> -->
+      <!-- <button onclick="populate() "> click me for a surprise! </button> -->
+      <a button onclick="populate()" class="btn-liquid">
+		  <span class="inner">click me for a surprise!</span>
+      </a>
+        <style>
+
+          /* button {
+          display: inline-block;
+          background-color: #7b38d8;
+          border-radius: 10px;
+          border: 4px double #cccccc;
+          color: #eeeeee;
+          text-align: center;
+          font-size: 28px;
+          padding: 20px;
+          width: 200px;
+          -webkit-transition: all 0.5s;
+          -moz-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 5px;
+          }
+          .button {
+          padding: 15px 100px;
+          margin:10px 4px;
+          color: #eee;
+          font-family: sans-serif;
+          text-transform: uppercase;
+          text-align: center;
+          position: relative;
+          text-decoration: none;
+          display:inline-block;
+          border:1px solid ;
+          }
+          button:hover {
+          background-color: green;
+          } */
+          body {
+          	display: flex;
+          	height: 10vh;
+
+          	align-items: center;
+          	justify-content: center;
+          }
+
+          .btn-liquid {
+          	display: inline-block;
+          	position: relative;
+          	width: 240px;
+          	height: 60px;
+
+          	border-radius: 27px;
+
+          	color: #fff;
+          	font: 700 14px/60px "Droid Sans", sans-serif;
+          	letter-spacing: 0.05em;
+          	text-align: center;
+          	text-decoration: none;
+          	text-transform: uppercase;
+          }
+
+          .btn-liquid .inner {
+          	position: relative;
+
+          	z-index: 2;
+          }
+
+          .btn-liquid canvas {
+          	position: absolute;
+          	top: -50px;
+          	right: -50px;
+          	bottom: -50px;
+          	left: -50px;
+
+          	z-index: 1;
+          }
+
+        </style>
+    </body>
+  </html>
